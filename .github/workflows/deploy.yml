@@ -17,6 +17,6 @@ jobs:
           KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           source: "./*"
-          target: "sudo /var/www/web/"
+          target: "/var/www/web/"
           strip_components: 1
       
