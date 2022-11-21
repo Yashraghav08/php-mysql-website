@@ -19,4 +19,8 @@ jobs:
           source: "./*"
           target: "/home/ubuntu/test"
           strip_components: 1
+          script: |
+            sudo cp /home/ubuntu/test /var/www
+          
+
       
