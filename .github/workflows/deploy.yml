@@ -27,5 +27,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-             sudo cp /home/ubuntu /var/www
+             sudo cp -r /home/ubuntu/test /var/www
              sudo service apache2 restart
