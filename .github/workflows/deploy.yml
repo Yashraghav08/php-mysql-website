@@ -17,4 +17,4 @@ jobs:
           KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           target: "/var/www/web/index.php"
-          strip_components: 1
+      
