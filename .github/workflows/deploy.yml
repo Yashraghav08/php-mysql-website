@@ -16,5 +16,6 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
+          source: "./*"
           target: "/var/www/web/index.php"
       
