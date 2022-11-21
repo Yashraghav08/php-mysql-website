@@ -17,8 +17,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             sudo chmod -R 755 /var/www/web
-            sudo chown -R www-data:www-data /var/www/web
-            sudo setfacl -R -m u:www-data:rwx /var/www/web 
+            sudo chown -R www-data:www-data /var/www/web 
 
       - uses: actions/checkout@v2
       - name: Deploy source-code
