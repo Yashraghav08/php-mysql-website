@@ -13,7 +13,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_PROD_HOST }}
           username: ${{ secrets.SSH_PROD_USERNAME }}
-          key: ${{ secrets.SSH_PROD_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
             sudo chmod -R 755 /var/www/web
@@ -27,7 +27,7 @@ jobs:
           HOST: ${{ secrets.SSH_PROD_HOST }} 
           USERNAME: ${{ secrets.SSH_PROD_USERNAME }}
           PORT: ${{ secrets.PORT }}
-          KEY: ${{ secrets.SSH_PROD_USERNAME }}
+          KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           source: "*"
           target: "/var/www/web"
